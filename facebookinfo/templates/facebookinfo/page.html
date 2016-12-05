@@ -1,0 +1,13 @@
+{% extends "base.html" %} {% load post_tags %}
+
+{% block content %}
+  <h1>{% object_information page "page" %}</h1>
+  <ul class="posts">
+  {% for post in page.posts.data %}
+    <li class="post">
+      Post: {% object_information post "post" %}
+      {% post_information post %}
+    </li>
+  {% endfor %}
+  </ul>
+{% endblock %}

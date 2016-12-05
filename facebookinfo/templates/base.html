@@ -1,0 +1,24 @@
+{% load staticfiles %}
+<!doctype html>
+<head>
+    <meta charset="utf-8">
+    <title>Facebook Information</title>
+    <meta name="description" content="">
+</head>
+<body>
+  <label for="your_name">URL: facebook.com/ </label>
+  <input id="url" type="text" name="url" value="">
+  <input type="reset" id="submitButton" value="GO">
+  <hr />
+
+  {% if message %}
+    There was an error fetching Facebook API. Please try again.<br />
+    Message: {{ message }}
+  {% else %}
+    {% block content %}
+    {% endblock content %}
+  {% endif %}
+
+  <script src="{% static 'main.js' %}"></script>
+</body>
+</html>

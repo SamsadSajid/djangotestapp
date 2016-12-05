@@ -1,0 +1,23 @@
+<ul class="comments">
+  {% for comment in post.comments.data %}
+  <li class="comment"> Coment:
+    <!-- {% for k,v in comment.items %}
+      <div class={{k}}>{{k}}: {{v}},</div>
+    {% endfor %} -->
+    <div class="id">id: {{comment.id}}</div>
+    <div class="message">message: {{comment.message}}</div>
+    <div class="from">from: {{comment.from}}</div>
+
+
+    <ul class="subcomments">
+      {% for comment in comment.comments.data %}
+        <li class="subcomment"> Subcomment:
+          {% for k,v in comment.items %}
+            <div class={{k}}>{{k}}: {{v}}</div>
+          {% endfor %}
+        </li>
+      {% endfor %}
+    </ul>
+  </li>
+  {% endfor %}
+</ul>

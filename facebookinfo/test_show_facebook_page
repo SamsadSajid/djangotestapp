@@ -1,0 +1,70 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.12.3]
+    method: GET
+    uri: https://graph.facebook.com/v2.7/BuzzCapture?access_token=1749415595384573%7CDEAAay0WC9cvGo51fZciJSYH2r4&fields=name%2C+id%2C+posts%7Bname%2C+comments.limit%2840%29%7Bfrom%2C+message%2C+comments.limit%2840%29%7Bfrom%2C+message%7D%7D%7D
+  response:
+    body:
+      string: !!binary |
+        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
+    headers:
+      Access-Control-Allow-Origin: ['*']
+      Cache-Control: ['private, no-cache, no-store, must-revalidate']
+      Connection: [keep-alive]
+      Content-Encoding: [gzip]
+      Content-Length: ['2223']
+      Content-Type: [application/json; charset=UTF-8]
+      Date: ['Sun, 04 Dec 2016 20:29:35 GMT']
+      ETag: ['"e26d4c2e97142d46529659604f3d2c8478b3ce8a"']
+      Expires: ['Sat, 01 Jan 2000 00:00:00 GMT']
+      Pragma: [no-cache]
+      Vary: [Accept-Encoding]
+      X-FB-Debug: [BKBUEshdlTrq+MuVPr+0o1SqT7TUWCgxQszeb9VMHdJUIB4RqlYuu+g522kWt6S7FSjflT8dZN5IPrXmYhx3Wg==]
+      facebook-api-version: [v2.8]
+      x-fb-rev: ['2718923']
+      x-fb-trace-id: [H3C+4S/cdDW]
+    status: {code: 200, message: OK}
+version: 1

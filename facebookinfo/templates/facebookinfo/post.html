@@ -1,0 +1,6 @@
+{% extends "base.html" %} {% load post_tags %}
+
+{% block content %}
+  <h1>{% object_information post "post" %}</h1>
+  {% post_information post %}
+{% endblock %}
